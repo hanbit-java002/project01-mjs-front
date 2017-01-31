@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<title>OverWatch Project</title>
+
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="stylesheet" href="plugins/normalize/normalize.css">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="plugins/modernizr/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+<div class="hp-container">
+	<header id="blizzardBar">
+		<div class="main-nav">
+			<ul>
+				<li class="main-nav-blizzard"></li>
+				<li class="main-nav-gamesList">
+					게임
+					<i class="fa fa-caret-down"></i>
+				</li>
+				<div class="dropdown-menu">
+					<button onclick="myFunction()" class="dropbtn">
+
+					</button>
+				</div>
+				<li class="main-nav-shop">
+					샵
+				</li>
+			</ul>
+		</div>
+		<div id="main-menu">
+			<ul>
+				<li>고객정보</li>
+				<li>내 계정
+					<i class="fa fa-caret-down"></i>
+				</li>
+			</ul>
+		</div>
+		<div class="sub-navbar">
+			<div class="overwatch-banner"></div>
+			<div class="navbar-section">
+				<ul>
+					<li>게임
+						<i class="fa fa-caret-down"></i>
+					</li>
+					<li>영웅</li>
+					<li>자료실</li>
+					<li>새소식</li>
+					<li>커뮤니티</li>
+					<li>E스포츠</li>
+				</ul>
+			</div>
+			<div class="navbar-section-right">
+				<div class="sub-search-bar">
+					<div class="navbar-section-form">
+							<i class="fa fa-search"></i>
+							<input class="navbar-search-field" type="text" placeholder="플레이어 검색" >
+					</div>
+				</div>
+				<a href="/login/" class="nav-btn m-dark show-for-md"><strong>로그인</strong></a>
+				<a href="/ko-kr/buy/" class="nav-btn m-orange m-buy show-for-md"><strong>구매하기</strong></a>
+			</div>
+		</div>
+	</header>
+	<div id="main-top">
+		<div id ="main-top-body"></div>
+	</div>
+	<div id="main-contents">
+		<section class="main-contents-container">
+			<div class="inner-container">
+				<div class="cell">
+					<a href="https://www.youtube.com/watch?v=ELPl0d3SXCE" class="button m-lg video-cta">
+						<div href="https://www.youtube.com/watch?v=ELPl0d3SXCE" class="media-thumbnail btn-art intro-trailer btn-art">
+							<div class="wrap"><video autoplay="" loop="" class="media">
+								<source type="video/mp4" src="https://overwatch-a.akamaihd.net/video/trailers/thumb-gameplay-26a8e4e11db2038d55d2e06ce7a37f32e17caf87af27349b5bc33df850137b4c781b836491c39c186b1791ce8199f6fc8d87b37867d12e31a6bf462a80bdf463.mp4">
+								Your browser does not support the <code>video</code> element.</video>
+							</div>
+						</div>
+						<div class="center-in-button-wrapper">
+							<span class="center-in-button">트레일러</span>
+						</div>
+					</a>
+				</div>
+				<div class="cell">
+					<a href="/ko-kr/buy/" class="button m-lg buy-cta">
+						<span class="center-in-button">구매하기</span>
+						<img src="https://overwatch-a.akamaihd.net/img/pages/home/box-art/ko/button-cta-overlay/btn-box-pc-f34f1ecc51af75363a287bf51200eb0d6e96a485dc289da7ca87b158fcc630ddc14413058b1d642a1c1752fe975a1db213ac972c795bb421f9b3a8365158d3ef.png" class="btn-art trans-out">
+						<!--<img src="https://overwatch-a.akamaihd.net/img/pages/home/box-art/ko/button-cta-overlay/btn-box-ps4-72b007779c91fa1cb8152fae15bcc006eeead3ce6aff161f1ead460f49a87a12ca6128fed62d94e3d02b4bfb04ae1cfa0a0202f3be28cd497b69c4e71b37f2ce.png" class="btn-art trans-in">
+						<img src="https://overwatch-a.akamaihd.net/img/pages/home/box-art/ko/button-cta-overlay/btn-box-xbox-c49de060826d22e27f062959ad6c977dfe85cbbe972f268979e51990079d0b30a85803fb204956b9fac12a5d848eadb8194a1235ad6f706924e7c4a934c10096.png" class="btn-art trans-out">-->
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="news-panel">
+			<div class = "news-container">
+				<ul>
+					<li class="panel-news">주요소식</li>
+				</ul>
+				<div class="row-spacer">
+					<div class="row01">
+						<div class="season-news" style="background-image: url(../img/overwatch_oasis.jpg)">
+							<div class="news-caption">
+								<div class="caption-title">
+									<ul>
+										<li>경쟁전 시즌3에 여러분을 초대합니다!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="event-news" style="background-image: url(../img/overwatch_season3.jpg)">
+							<div class="news-caption">
+								<div class="caption-title2">
+									<ul>
+										<li>홈페이지 만드는건 어렵다</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="other-news">
+					<ul>
+						<li>새소식 모두 보기</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="introduction">
+			<div class="stage1">
+				<div class="info-container">
+					<div id="headline">미래를 위한 전투</div>
+					<div id="historyline">군인, 과학자, 탐험가, 전문가<br><br>
+						국제 분쟁의 시대에 상처로 찢긴 세계를 구원하기 위해 영웅들로 구성된 다국적 특수부대,
+						<br><strong>오버워치</strong>가 결성되었습니다<br><br>
+						그들은 사태를 종식시켰고, 그 후 수십 년 동안 평화가 지속되며 탐험과 혁신, 발견의 시대가 이어졌습니다.
+						그러나 시간이 흐르며 오버워치는 그 영향력을 서서히 잃었고, 마침내는 해체되기에 이르렀습니다.<br><br></div>
+					<div class="game-info">
+						<ul>
+							<li><strong>게임 살펴보기</strong></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="heroes-section">
+			<div class="heroes-container">
+				<ul>
+					<li class="heroes-intro-header">개성 넘치는 영웅들</li>
+				</ul>
+				<div class="heroes-mission">
+					<strong>오버워치에는 다양한 능력을 가진 개성 넘치는 영웅들이 있습니다.<br><br>
+						각 영웅의 능력을 파악하고 효과적으로 사용하여 전투에서 승리하세요!</strong>
+				</div>
+			</div>
+			<div class="heroes-select-container">
+				<div class="heroes-spotlight">
+					<div class="heroes-spotlight-banner">
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="background"></section>
+		<section class="purchase">
+			<div class="char-tracer"></div>
+			<div class="purchase-container">
+				<div class="purchase-text">
+					<ul>
+						<li class="purchase-header">시작하기</li>
+					</ul>
+					<div class="purchase-intro">
+						세계에는 새로운 영웅이 필요합니다.
+						지금 전투에 뛰어드세요.
+					</div>
+					<div class="purchase-button">
+						<ul>
+							<li><strong>구매하기</strong></li>
+						</ul>
+					</div>
+					<div class="purchase-items">
+						<img src="https://overwatch-a.akamaihd.net/img/pages/home/box-art/ko/button-cta-overlay/btn-box-ps4-72b007779c91fa1cb8152fae15bcc006eeead3ce6aff161f1ead460f49a87a12ca6128fed62d94e3d02b4bfb04ae1cfa0a0202f3be28cd497b69c4e71b37f2ce.png" class="overwatch-game">
+						<img src="https://overwatch-a.akamaihd.net/img/pages/home/box-art/ko/overwatch-pc-tablet-3223d8f3f7e4769a9076d3e7d855944c0986b99c97e8e44e0efc7433bb7bc350a6bb23f8db8702c6323b07059135f837f0ea3c3e9b1569db450a8c4c60d2ca49.png" class="overwatch-game overwatch-game-pc">
+						<img src="https://overwatch-a.akamaihd.net/img/pages/home/box-art/ko/button-cta-overlay/btn-box-xbox-c49de060826d22e27f062959ad6c977dfe85cbbe972f268979e51990079d0b30a85803fb204956b9fac12a5d848eadb8194a1235ad6f706924e7c4a934c10096.png" class="overwatch-game">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer1">
+			<section class="footer1-container">
+				<div class="purchase-button2">
+					<ul>
+						<li><strong>구매하기</strong></li>
+					</ul>
+				</div>
+			</section>
+			<hr class="footer-rule">
+			<section class="footer1-container2">
+				<div class="social-service">소셜 서비스</div>
+				<div class="social-container">
+					<ul class="social-share-buttons">
+						<li class="facebook">
+							<i class="fa fa-facebook"></i>
+						</li>
+						<li class="twitter">
+							<i class="fa fa-twitter"></i>
+						</li>
+						<li class="youtube">
+							<i class="fa fa-youtube-play"></i>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+	</div>
+</div>
+{{> footer jsName='main'}}
+
+
+
+<script src="plugins/requirejs/require.min.js"></script>
+<script src="js/require.config.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

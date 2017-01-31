@@ -1,0 +1,907 @@
+@import 'lib/include.all.less';
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+	font-family: 'Spoqa Han Sans', sans-serif;
+}
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+html, body {
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.layer-dark {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.layer-darker {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hp-container {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+#blizzardBar {
+	position: fixed;
+	transform: translateZ(0);
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: @blizzardBar;
+	z-index: 10;
+	color: #fff;
+	font-size: 20px;
+	line-height: 20px;
+	background-color: rgba(2, 25, 72, 0.3);
+}
+
+#blizzardBar #main-menu{
+	padding-top: 13px;
+	padding-bottom: 13px;
+	font-size: 15px;
+}
+
+.main-nav{
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.main-nav-blizzard{
+	background-image: url(../img/battlenet.png);
+	width: 44px;
+	height: 44px;
+	background-size: 44px auto;
+	padding: 2px 0;
+}
+
+.main-nav>ul>li{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 30px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 100%;
+	vertical-align: middle;
+	cursor: pointer;
+	background-repeat: no-repeat;
+}
+
+.fa-chevron-down{
+	top: 13px;
+}
+
+.dropdown-menu{
+	display: block;
+	top: 16px;
+	margin:18px 0;
+	left:-2px;
+	z-index: 1000;
+	padding: 4px 0;
+	background-color: #272e3b;
+	box-shadow: inset 0 0 0 1px #3d434f, 0 5px 10px rgba(0,0,0,.75);
+	border: 1px solid #000;
+	border-width: 1px;
+	position: absolute;
+	float: left;
+	min-width: 160px;
+	list-style: none;
+
+}
+
+
+#main-bar.header-transparent {
+	background-color: transparent;
+	border-bottom: 0;
+}
+
+.sub-navbar{
+	width: 1543px;
+	display: inline-flex;
+	padding: 0;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 62px;
+	background-color: rgba(40,53,79,.95);
+}
+
+.overwatch-banner{
+	display: inline-flex;
+	height: 100%;
+	width: 220px;
+	background-image: url(../img/overwatch_logo.jpg);
+	background-position: 50%;
+	background-size: 190px auto;
+	background-repeat: no-repeat;
+}
+
+.navbar-section{
+	display: inline-block;
+	position: relative;
+	padding-top: 27px;
+	padding-bottom: 15px;
+}
+
+.navbar-section>ul{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+}
+
+.navbar-section>ul>li{
+	display: inline-block;
+	padding: 1px 15px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 50%;
+	vertical-align: middle;
+	cursor: pointer
+}
+
+.navbar-section-right{
+	display: flex;
+	height: 100%;
+	margin-left: auto;
+}
+
+.sub-search-bar{
+	height: 100%;
+}
+
+.navbar-section-form{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	position: relative;
+	white-space: normal;
+	display: block;
+	margin-top: 0em;
+}
+
+.fa-search{
+	position: absolute;
+	top: 18px;
+	left: 0;
+	height: 100%;
+	width: 46px;
+	background-position: 50%;
+	pointer-events: none;
+	background-position: 50%;
+	pointer-events: none;
+}
+
+.navbar-search-field{
+	font-size: 16px;
+	padding-left: 46px;
+	background-position: left 15px center;
+	height: 100%;
+	width: 241px;
+	vertical-align: middle;
+	border: 0;
+	outline: 0;
+	color: hsla(0, 0%, 100%, .7);
+	font-weight: 100;
+	font-family: Arial;
+	background-color: hsla(0,0%,100%,.025);
+	text-overflow: ellipsis;
+	transition: background-color .2s,color .2s;
+	line-height: normal;
+}
+
+.nav-btn{
+	font-family: BlackFit77,sans-serif;
+	color: hsla(0,0%,100%,.7);
+	height: 100%;
+	display: inline-flex;
+	background-color: rgba(0,0,0,.15);
+	padding: 0 15px;
+	font-size: 16px;
+	align-items: center;
+	font-weight: 100;
+	text-transform: uppercase;
+	transition: background-color .2s, color .2s;
+	position: relative;
+}
+
+.nav-btn:hover{
+	color:#fff;
+}
+
+.nav-btn.m-buy{
+	font-family: BlackFit77,sans-serif;
+	min-width: 100px;
+	background-color: #f7931e;
+
+}
+
+.m-buy:hover{
+	color:#fff;
+}
+
+.sub-navbar-menu{
+	margin-left: auto;
+	display: flex;
+	height: 100%;
+}
+
+#main-logo {
+	display: inline-block;
+	color: @main-color;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 115%;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.header-transparent #main-logo {
+	color: #ffffff;
+}
+
+#main-menu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#main-menu>ul>li {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+	font-size: 15px;
+	line-height: 100%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.header-transparent #main-menu>ul>li {
+	border-left: 0;
+	color: #fff;
+}
+
+#main-menu>ul>li:last-child {
+	font-size: 15px;
+}
+
+.hp-contents {
+	position: relative;
+	padding-top: 67px;
+	padding-bottom: 495px;
+}
+
+footer {
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	height: @footer-height;
+	background-color: #f8f8f8;
+}
+
+.footer-box {
+	margin: 0;
+	max-width: 100%;
+	background-color: #f0edf2;
+	padding: 0 40px;
+	line-height: 1.4;
+	border-top: 1px solid rgba(0,0,0,.07);
+	color: #555;
+	height: 410px;
+}
+
+.desc-footer-container{
+	display: block;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 329px;
+}
+
+.desc-middle-container{
+	height: 329px;
+}
+
+.footer-top-section{
+	display: block;
+	font-size: inherit;
+	padding: 0;
+	border: none;
+	margin: 40px 0;
+	height: 24px;
+}
+
+.footer-section-left{
+	margin-right: 25px;
+	position: relative;
+	float: left!important;
+}
+
+.footer-section-right{
+	position: relative;
+	float: right!important;
+}
+
+.footer-top-section ul.support-feedback{
+	padding-left: 0;
+	color: #000;
+	font-size: 18px;
+}
+
+.footer-section-left>ul>li{
+	display: inline-block;
+}
+
+.fa-question-circle-o{
+	display: inline-block;
+	color: #00ddff;
+	background-position: 0 -50px;
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+	width: 24px;
+	height: 24px;
+}
+
+.fa-pencil-square-o{
+	display: inline-block;
+	color: #00ddff;
+	background-position: 0 -25px;
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+	width: 24px;
+	height: 24px;
+}
+
+.footer-section-right{
+	position: relative;
+	float: right!important;
+}
+
+.language-select{
+	position: relative;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#language-select-pop{
+	color: rgba(0,0,0,.7);
+	cursor: pointer;
+}
+
+.fa-globe{
+	background-position: 0 -75px;
+	margin-left: 0;
+	float: left;
+	margin-right: 5px;
+	width: 24px;
+	height: 24px;
+	color: #00ddff;
+}
+
+.fa-sort-desc{
+	display: inline-block;
+	top: 4px;
+	background-position: -5px -4px;
+	margin-left: 5px;
+	width: 16px;
+	height: 16px;
+	color: #00ddff;
+}
+
+#footer-menu {
+	display: block;
+	padding-left: 30px;
+	padding-rigth: 30px;
+	width: 100%;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sort-down-pop{
+	height: 250px;
+	width: 360px;
+	background-color: #272e3b;
+	box-shadow: inset 0 0 0 1px #3d434f, 0 5px 10px rgba(0,0,0,.75);
+	border: solid #000;
+	border-width: 1px;
+	padding: 0;
+	bottom: 35px;
+	right: -17px;
+	border-radius: initial;
+}
+
+.footer-box .sort-down-pop{
+	position: absolute;
+	top:auto;
+	display: block;
+	left: auto;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	margin: 2px 0 0;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-clip: padding-box;
+}
+
+.regions{
+	padding: 0;
+	padding-bottom: 20px;
+	width: 50%;
+	display: inline-table;
+	border-right: 1px solid  hsla(0,0%,100%,.07);
+}
+
+.sort-down-pop .menu-title{
+	color: #777;
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	padding: 0 0 0 24px;
+}
+
+.language-select-section>ul>li{
+	line-height: 18px;
+	list-style-type: none;
+}
+
+.language-select-section>ul>li>a{
+	display: block;
+	padding: 0 0 0 24px;
+	line-height: 30px;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+.regions-language{
+	display: none;
+}
+
+.divider{
+	margin: 0;
+	background-color: #3d434f;
+	height: 1px;
+	overflow: hidden;
+}
+
+.language-change{
+	padding: 10px;
+}
+
+.language-change>a{
+	float: left;
+	font-size: 13px;
+	margin: 3px 0;
+	padding: 10px 20px;
+	color: #fff;
+	text-after-overflow: none;
+	background-image: linear-gradient(180deg, #0f9ada,#0076ad);
+	line-height: 1;
+}
+
+.arrow-down{
+	position: absolute;
+	right: 0;
+	border-width: 8px;
+	border-bottom-width: 0;
+	border-top-color: #000;
+}
+
+.footer-inner-section{
+	display: block;
+	padding: 0;
+	border: none;
+	margin: 40px 0;
+	height: 265px;
+}
+
+.company-details{
+	height: 58px;
+}
+
+#company-link{
+	position: relative;
+	float: left!important;
+}
+
+.blizzard-logo{
+	margin: 0;
+	background-image: url(../img/blizzard_logo.jpg);
+	background-position: 50%;
+	background-size: cover;
+	width: 125px;
+	height: 65px;
+}
+
+.company-info{
+	padding-left: 30px;
+	position: relative;
+	float: left!important
+}
+
+.company-links{
+	position: relative;
+	font-size: 13px;
+	line-height: 24px;
+	text-align: center;
+	float: left!important;
+}
+
+.company-links>ul{
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 10px;
+}
+
+.company-links>ul>li{
+	display: inline;
+	text-transform: uppercase;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: rgba(0,0,0, 0.7);
+	border-right: 1px solid #555;
+}
+
+.company-links .privacy{
+	font-weight: 700;
+	color: #99cee0;
+}
+
+.company-copyright{
+	text-align: left;
+	font-size: 13px;
+	clear: both;
+	text-transform: uppercase;
+	color: #555;
+}
+
+.company-contact{
+	padding-top: 30px;
+	position: relative;
+	font-size: 18px;
+}
+
+.ratings{
+	float: right;
+	padding-top: 0;
+	width: inherit;
+	display: inline-block;
+	text-align: center;
+}
+
+.rating-wrapper{
+	width: 549px;
+	height: 97px;
+	float: left;
+	display: flex;
+	text-align: center;
+	@margin-auto-width();
+	padding-bottom: 20px;
+}
+
+.rating{
+	background-repeat: no-repeat;
+	height: 77px;
+	width: 65px;
+	margin: 0;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	background-image: url(../img/rating.jpg);
+	cursor: pointer;
+}
+
+.violence{
+	background-repeat: no-repeat;
+	height: 77px;
+	width: 65px;
+	margin: 0;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	background-image: url(../img/violence.jpg);
+
+}
+
+.banner{
+	background-repeat: no-repeat;
+	height: 77px;
+	width: 418px;
+	margin: 0;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	background-image: url(../img/overwatch_banner.jpg);
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+	display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after,
+	*:first-letter,
+	*:first-line {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	/*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}

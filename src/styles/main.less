@@ -1,0 +1,751 @@
+@import 'lib/include.all.less';
+@import 'common.less';
+
+#main-top-body{
+	height: 517px;
+	background-image: url(../img/overwatch.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: 100%;
+	background-position-y: 100%;
+}
+
+.main-contents-container{
+	position: relative;
+	float: none;
+	display: block;
+	z-index: 20;
+	width: 100%;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 0px;
+	padding-bottom: 0;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.inner-container{
+	display: table;
+	width: 100%;
+	height: 100%;
+	margin-top: 5px;
+	padding: 0 0.8%;
+}
+
+.cell{
+	width: 50%;
+	height: 100%;
+	display: table-cell;
+}
+
+.video-cta{
+	color: #fff;
+	position: relative;
+	float: left;
+	padding-left: 180px;
+	padding-right: 20px;
+	display: inline-block;
+	width: auto;
+	font-weight: 400;
+	font-size: 32px;
+}
+
+.button{
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	border-radius: 2px;
+	text-transform: uppercase;
+	border: 3px solid #ff9c00;
+	background-color: #ff9c00;
+	line-height: 1;
+}
+
+.btn-art{
+	position: absolute;
+	display: block;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10px;
+
+	width: 150px;
+	margin-top: 0;
+	right: auto;
+	cursor: pointer;
+	@margin-auto-width();
+}
+
+.buy-cta{
+	color: #fff;
+	position: relative;
+	float: right;
+	padding-left: 20px;
+	padding-right: 140px;
+	display: inline-block;
+	width: auto;
+	font-weight: 400;
+	font-size: 32px;
+}
+
+.buy-cta .btn-art{
+	position: absolute;
+	right: 10px;
+	display: block;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 110px;
+	height: 151px;
+	margin-top: 0;
+	left: auto;
+	cursor: pointer;
+	@margin-auto-width();
+
+}
+
+.media-thumbnail>.wrap{
+	position: relative;
+	overflow: hidden;
+}
+
+.media-thumbnail>.wrap:before{
+	content: "";
+	display: block;
+	height: 0;
+	padding-top: 56.25%;
+}
+
+.media-thumbnail>.wrap>.media{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 3px;
+}
+
+.media{
+	display: block;
+	overflow: auto;
+}
+
+video{
+	vertical-align: baseline;
+}
+
+main-contents-container>a{
+	height: 100%;
+}
+.inner-container .inner-gametrailer,
+.inner-container .inner-gamecover{
+	position: relative;
+}
+
+.inner-gametrailer{
+	width: 150px;
+	height: 84px;
+	display: table-cell;
+	overflow: hidden;
+}
+
+section.news-panel{
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+.news-container{
+	width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row01,
+.row02{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.row-spacer.row01>ul>li{
+	width: 50%;
+	height: 230px;
+}
+
+.season-news{
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 48%;
+	height: 275px;
+	background-color: #4cae4c;
+	background-size: inherit;
+}
+
+.event-news{
+	float:right;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 48%;
+	height: 275px;
+	background-color: #4cae4c;
+	background-size: inherit;
+}
+
+.panel-news{
+	text-align: center;
+	margin: 30px 0;
+	font-size: 30px;
+}
+
+.row-spacer{
+	max-width: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.news-caption .caption-title,
+.news-caption .caption-title2{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	padding: 10px;
+	background-color: #122b40;
+	opacity: 30;
+	color: #f0edf2;
+	text-align: left;
+}
+
+.news-caption .caption-title>ul>li{
+	 font-size: 22px;
+	 color: #f9f9f9;
+ }
+
+.news-caption .caption-title2>ul>li{
+	font-size: 22px;
+	color: #f9f9f9;
+}
+
+.other-news{
+	margin-top: 25px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	border-radius: 2px;
+	border: solid 3px #00a5e2;
+	line-height: 1;
+
+}
+
+.other-news>ul>li{
+	font-size: 28px;
+	margin-top:  0px;
+	color: #00a5e2;
+	border-color: #00a5e2;
+	background-color: transparent;
+	padding: 8.5px 65px 7.5px;
+}
+
+.stage1{
+	height: 845px;
+	background-size: cover;
+	background-position: top;
+	background-image: url(../img/overwatch_info01.jpg);
+	background-color: #f0eef3;
+	background-position-x: 100%;
+	background-position-y: 100%;
+}
+
+.stage2{
+	height: 730px;
+	background-size: cover;
+	background-position: top;
+	background-image: url(../img/overwatch_info02.jpg);
+	background-color: #f0eef3;
+	background-position-x: 100%;
+	background-position-y: 100%;
+}
+
+.stage3{
+	height: 730px;
+	background-size: cover;
+	background-position: top;
+	background-image: url(../img/overwatch_info03.jpg);
+	background-color: #f0eef3;
+	background-position-x: 100%;
+	background-position-y: 100%;
+}
+
+
+section.introduction{
+	height: 909px;
+	display: block;
+	width: 100%;
+	padding:65px 0 95px;
+	position: relative;
+	text-align: center;
+	border-bottom: solid 1px #f5f5f5;
+	max-width: 100%;
+	background: none;
+	color: #f5f5f5;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.info-container{
+	padding-top: 100px;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#headline{
+	color: #fff;
+	text-shadow: 0 4px 5px #607296;
+	font-style: italic;
+	font-size: 72px;
+	line-height: normal;
+	margin-bottom: 44px;
+	text-transform: uppercase;
+	display: block;
+}
+
+#historyline{
+	text-shadow: 0 4px 5px #607296;
+	font-style: italic;
+	color: #fff;
+	display: block;
+	font-size: 28px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 36px;
+
+}
+
+.game-info{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	margin-top: 30px;
+	font-size: 32px;
+	color: #fbc280;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	border-radius: 5px;
+	line-height: 1;
+	border: 3px solid #ff9c00;
+	background-color: #ff9c00;
+}
+
+.game-info>ul>li{
+	font-style: italic;
+	font-size: 28px;
+	margin-top:  0px;
+	color: #ffffff;
+	border-color: #ff9c00;
+	background-color: transparent;
+	padding: 8.5px 65px 7.5px;
+}
+
+.heroes-section{
+	height: 1070px;
+	text-align: center;
+	background-image: url(../img/overwatch_background.jpg);
+	background-position: top;
+	background-size: cover;
+	padding-top: 72px;
+	padding-bottom: 72px;
+	display: block;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.heroes-section.heroes-container{
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.heroes-container>ul>li {
+	font-size: 72px;
+	color: #345177;
+	text-shadow: 0 4px 5px #607296;
+	margin-bottom: 44px;
+	text-transform: uppercase;
+	font-style: italic;
+	text-transform: uppercase;
+	margin-bottom: 44px;
+}
+
+.heroes-mission{
+	font-size: 28px;
+	font-style: italic;
+	line-height: normal;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 36px;
+	color: #345177;
+}
+
+.heroes-select-container{
+
+}
+
+.heroes-spotlight{
+	display: block;
+	position: relative;
+}
+
+.heroes-spotlight-banner{
+	width: 100%;
+	min-height: 200px;
+	position: absolute;
+	padding: 10px 0px 15px;
+	top: calc(50% - 100px);
+	text-align: right;
+	background-image: linear-gradient(90deg,rgba(64,82,117,0) 0,rgba(64,82,117,.8) 25%,
+	rgba(64,82,117,.8) 75%,rgba(64,82,117,0));
+	background-position: 50%;
+	background-size: 1920px auto;
+	z-index: 0;
+	margin-top: 100px;
+}
+
+section.background{
+	display: block;
+	background-attachment: fixed;
+	min-height: 335px;
+	background-position: center 16%;
+	background-image: url(../img/overwatch_bg.jpg);
+}
+
+section.purchase{
+	height: 695px;
+	display: block;
+	text-align: center;
+	position: relative;
+	border-top: 1px solid #ffffff;
+	background-image: url(../img/overwatch_background.jpg);
+	background-size: cover;
+	background-position: top;
+	padding-top: 72px;
+	padding-bottom: 72px;
+}
+
+.char-tracer{
+	position: absolute;
+	bottom: 100px;
+	left: 50px;
+	right: 0;
+	width: 40%;
+	height: 98%;
+	background-position: top;
+	background-image: url(../img/overwatch_tracer.jpg);
+}
+
+.purchase-container{
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.purchase-text{
+	margin-left: 50%;
+	width: 41%;
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+}
+
+.purchase-text>ul>li {
+	font-size: 72px;
+	color: #345177;
+	text-shadow: 0 4px 5px #607296;
+	margin-bottom: 44px;
+	text-transform: uppercase;
+	font-style: italic;
+	text-transform: uppercase;
+	margin-bottom: 44px;
+}
+
+.purchase-intro{
+	font-size: 28px;
+	line-height: normal;
+	margin-bottom: 36px;
+	color: #345177;
+	text-shadow: 0 4px 5px #607296;
+	font-style: italic;
+}
+
+.purchase-button{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 40px 9px;
+	font-size: 32px;
+	color: #fbc280;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	border-radius: 2px;
+	line-height: 1;
+	border: 3px solid #ff9c00;
+	background-color: #ff9c00;
+}
+
+.purchase-button>ul>li{
+	font-style: italic;
+	font-size: 28px;
+	margin-top:  0px;
+	color: #ffffff;
+	border-color: #ff9c00;
+	background-color: transparent;
+}
+
+.purchase-items{
+	display: block;
+	margin-top: 30px;
+	position: relative;
+	text-align: center;
+}
+
+.overwatch-game {
+	vertical-align: top;
+	width: 23%;
+	max-width: 180px;
+	margin-top: 1.5rem;
+}
+
+.overwatch-game-pc{
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 33%;
+	max-width: 251px;
+	margin: 0 25px -20px;
+}
+
+.footer1 {
+	display: block;
+	position: relative;
+	text-align: center;
+	display: block;
+	background-image: url(../img/overwatch_background2.jpg);
+	height: 363px;
+
+}
+
+.footer1-container{
+	display: block;
+	padding-top: 72px;
+	padding-bottom: 72px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.purchase-button2{
+	display: inline-block;
+	margin-top: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 40px 9px;
+	font-size: 32px;
+	color: #fbc280;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	border-radius: 2px;
+	line-height: 1;
+	border: 3px solid #ff9c00;
+	background-color: #ff9c00;
+}
+
+.purchase-button2>ul>li{
+	font-style: italic;
+	font-size: 28px;
+	margin-top:  0px;
+	color: #ffffff;
+	border-color: #ff9c00;
+	background-color: transparent;
+}
+
+.footer-rule {
+	margin: 0;
+	max-width: none;
+	border-bottom: 2px solid #cacaca;
+	opacity: .1;
+	box-sizing: content-box;
+	height: 0;
+}
+
+.footer1-container2{
+	display: block;
+	float: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.social-service{
+	font-size: 48px;
+	line-height: normal;
+	color: #f0edf2;
+	margin: 0;
+	display: block;
+	text-transform: uppercase;
+	white-space: normal;
+}
+
+.social-container{
+	display: block;
+	margin-top: 5px;
+}
+
+.social-share-buttons {
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+
+.social-share-buttons>li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 25px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+}
+
+.facebook {
+	background-color: @facebook;
+	color: #fff;
+}
+
+.twitter{
+	background-color: @twitter;
+	color: #fff;
+}
+
+.youtube{
+	background-color: @youtube;
+	color: #fff;
+}
+
+/*.bootstrap-footer{
+	display: block;
+}
+
+bootstrap-footer-container{
+	display: block;
+	margin: 0;
+	max-width: 100%;
+	background-color: #f0edf2;
+	border-top: 1px solid rgba(0,0,0,.07);
+	color: #555;
+	line-height: 1.4;
+	padding: 0 40px;
+}
+
+.companyinfo-container{
+	display: block;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 410px;
+}
+
+.companyinfo-section{
+	font-size: inherit;
+	padding: 0;
+	border: none;
+	margin: 40px 0;
+	display: block;
+}
+
+.companyinfo-left{
+	display: block;
+	position: relative;
+	float: left!important;
+}
+
+.fa-question-circle-o{
+	display: block;
+	font-size: 25px;
+	color: #00ddff;
+	background-position: 0 -50px;
+	position: relative;
+	margin-left: 0;
+	margin-right: 5px;
+	width: 24px;
+	height: 24px;
+}
+
+.companyinfo-section ul.support-feedback{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.bootstrap-footer>ul{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.blizzard_entetainment{
+	display: block;
+	background-image: url(../img/blizzard_entetainment_logo.jpg);
+	margin: 0;
+	background-position: 50%;
+	background-size: contain;
+	width: 113px;
+	height: 58px;
+}
+
+.companyinfo-left2{
+	color: rgba(0,0,0,.7);
+	margin-right: 25px;
+	position: relative;
+	float: left!important;
+
+}*/
+
