@@ -94,24 +94,135 @@ ul {
 	top: 13px;
 }
 
-.dropdown-menu{
+.gamelist-dropdown{
 	display: block;
 	top: 12px;
 	margin:18px 0;
-	left:-2px;
+	left: 70px;
 	z-index: 1000;
 	padding: 4px 0;
 	background-color: #272e3b;
 	box-shadow: inset 0 0 0 1px #3d434f, 0 5px 10px rgba(0,0,0,.75);
-	border: 1px solid #000;
+	border: solid #000;
 	border-width: 1px;
 	position: absolute;
 	float: left;
 	min-width: 160px;
 	list-style: none;
-
 }
 
+.game-products{
+	margin: 0;
+	padding: 0;
+	width: 360px;
+}
+
+.gamelist-dropdown>ul>li{
+	position: relative;
+	display: table;
+	box-sizing: border-box;
+	border: 1px solid #3d434f;
+	border-left: none;
+	border-top: none;
+	margin: 0;
+	padding: 0;
+	width: 33.3%;
+	height: 116px;
+	cursor: pointer;
+}
+
+.warcraft-icon{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	top: 5px;
+	background-image: url(../img/wow_cataclysm.png);
+}
+
+.diablo3-icon{
+	background-position: -70px 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	top: 5px;
+	background-image: url(../img/diablo3_icon.png);
+}
+
+.starcraft2-icon{
+	background-position: -140px 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	top: 5px;
+	background-image: url(../img/starcraft2_icon.png);
+}
+
+.hearth_icon{
+	background-position: -210px 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	top: 5px;
+	background-image: url(../img/hearth_icon.png);
+}
+
+.host-icon{
+	background-position: -280px 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	top: 5px;
+	background-image: url(../img/hots_icon.png);
+}
+
+.overwatch-icon{
+	background-position: -350px 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	top: 5px;
+	background-image: url(../img/overwatch_icon.png);
+}
+
+.gamelist-dropdown>ul>li>a{
+	position: relative;
+	padding: 70px 10px 5px;
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 13px;
+	line-height: 15px;
+	vertical-align: middle;
+	white-space: normal;
+	color: #f5f5f5;
+}
 
 #main-bar.header-transparent {
 	background-color: transparent;
